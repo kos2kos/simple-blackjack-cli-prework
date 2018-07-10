@@ -48,6 +48,7 @@ def hit?(total)
    
   elsif input == 's'
     total = total + 0
+    hit?(input)
   else 
     invalid_command
     prompt_user
@@ -69,9 +70,6 @@ def runner
   welcome
   input = initial_round
   hit?(input) 
-  while input <= 20 
-    hit?(input)
-    display_card_total(input)
-  end
+  display_card_total(input)
 end
     
