@@ -71,6 +71,7 @@ def runner
   until input > 21
     hit?(input)
     display_card_total(input)
+    input = 21
   end
 end
     
