@@ -44,7 +44,7 @@ def hit?(total)
   if input == 'h'
     total += deal_card
     if total > 21
-      end_game
+      end_game(total)
     end
   elsif input == 's'
     total = total + 0
