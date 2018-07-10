@@ -71,8 +71,9 @@ def runner
     input = initial_round
     hit?(input)
     prompt_user
-    until get_user_input == 'h'
+    prompt = get_user_input
+    until prompt == 'h'
       prompt_user
-      get_user_input
+      prompt = get_user_input
 end
     
