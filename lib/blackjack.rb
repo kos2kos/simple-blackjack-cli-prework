@@ -75,5 +75,7 @@ def runner
     until prompt == 'h'
       prompt_user
       prompt = get_user_input
+    end
+    hit?(input)
 end
     
