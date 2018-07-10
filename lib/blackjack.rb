@@ -70,6 +70,9 @@ def runner
   until input >= 21
   input = initial_round
   hit?(input)
+  if input > 21
+    return end_game
+end
 end
     
 end
