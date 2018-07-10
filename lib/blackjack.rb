@@ -73,5 +73,5 @@ def runner
       if input > 21
         return end_game
       end
-end
+    end
 end
