@@ -77,5 +77,6 @@ def runner
       prompt = get_user_input
     end
     hit?(input)
+  end
 end
     
