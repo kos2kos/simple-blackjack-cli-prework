@@ -73,7 +73,7 @@ def runner
     if input > 21 
       return end_game
     else
-      hit?(input)
+      input = hit?(input)
       display_card_total(input)
     end
   end
