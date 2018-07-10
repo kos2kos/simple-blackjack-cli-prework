@@ -67,12 +67,10 @@ def runner
   # code runner here
   welcome
   input = initial_round
-  until input>= 21
-    if input > 21 
-       break end_game(input)
-    else
+  until input> 21
       input = hit?(input)
       display_card_total(input)
     end
   end
+    end_game(input)
 end
