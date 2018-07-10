@@ -80,6 +80,7 @@ def runner
       return end_game(input)
     else 
       hit?(input)
+    end
   end
 end
     
