@@ -65,22 +65,4 @@ end
 
 def runner
   # code runner here
-  input = 0
-  until input >= 21
-    welcome
-    input = initial_round
-    hit?(input)
-    prompt_user
-    prompt = get_user_input
-    until prompt == 'h'
-      prompt_user
-      prompt = get_user_input
-    end
-    if input > 21
-      return end_game(input)
-    else 
-      hit?(input)
-    end
-  end
 end
-/*
