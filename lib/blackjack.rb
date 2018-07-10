@@ -65,4 +65,8 @@ end
 
 def runner
   # code runner here
+  welcome
+  input = initial_round
+  until
+  hit?(input)
 end
