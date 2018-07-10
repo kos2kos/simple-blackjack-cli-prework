@@ -65,12 +65,14 @@ end
 
 def runner
   # code runner here
-  welcome
-  input = initial_round
-  hit?(input)
-  prompt_user
-  until get_user_input == 'h'
-  prompt_user
-  get_user_input
+  input = 0
+  until input >= 21
+    welcome
+    input = initial_round
+    hit?(input)
+    prompt_user
+    until get_user_input == 'h'
+      prompt_user
+      get_user_input
 end
     
