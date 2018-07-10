@@ -46,7 +46,7 @@ def hit?(total)
     return total += deal_card
    
   elsif input == 's'
-    return total = total + 0
+    return total
   else 
     invalid_command
     prompt_user
@@ -67,12 +67,8 @@ def runner
   # code runner here
   welcome
   input = 0
-  until input >= 21
-    hit?(input)
-      if input > 21
-        return end_game
-      else
-        hit?(input)
-      end
-    end
+  hit?(input)
+  if input > 21 
+    return end_game
+  end
 end
