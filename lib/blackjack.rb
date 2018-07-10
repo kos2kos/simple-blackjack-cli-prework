@@ -41,11 +41,11 @@ def hit?(total)
   # code hit? here
   prompt_user
   input = get_user_input
-  if input == 'h'
-    total += deal_card
-    if total > 21
+  if total > 21
       end_game(total)
-    end
+  elsif input == 'h'
+    total += deal_card
+   
   elsif input == 's'
     total = total + 0
   else 
