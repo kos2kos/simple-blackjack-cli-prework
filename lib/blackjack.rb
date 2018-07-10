@@ -42,7 +42,7 @@ def hit?(total)
   prompt_user
   input = get_user_input
   
-  elsif input == 'h'
+  if input == 'h'
     total += deal_card
    
   elsif input == 's'
@@ -76,7 +76,10 @@ def runner
       prompt_user
       prompt = get_user_input
     end
-    hit?(input)
+    if input > 21
+      return end_game(input)
+    else 
+      hit?(input)
   end
 end
     
