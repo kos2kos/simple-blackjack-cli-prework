@@ -66,9 +66,11 @@ end
 def runner
   # code runner here
   welcome
+  
   input = initial_round
-  hit?(input)
-  if input > 21 
-    return end_game
-  end
+  until input>= 21
+    hit?(input)
+    if input > 21 
+      return end_game
+    end
 end
